@@ -9,7 +9,9 @@ ryzu-prompt/
 ├── SKILL.md                      # instruksi utama skill
 ├── README.md
 ├── references/
-│   └── humanizer.md              # pola tulisan AI + cara bersihin (ID/EN)
+│   ├── humanizer.md              # pola tulisan AI + cara bersihin (ID/EN)
+│   ├── android-ios.md            # root, kernel, modul, internals, app dev Android/iOS
+│   └── knowledge.md              # 17 area kompetensi terapan (OS, jaringan, DB, API, QA, DR, dll)
 └── ui-ux/
     ├── scripts/search.py         # design-intelligence search (Python 3 stdlib only)
     ├── data/                     # styles, colors, typography, landing, ux, charts, icons, gsap, dll
@@ -39,9 +41,11 @@ Skill auto-trigger bergantung pada `description` di `SKILL.md`. Biar lebih pasti
 | §0 Profil | Bahasa gw/lu, hobi, stack, selera UI, memori preferensi (`RYZU-MEMORY.md` bila ada). Chat biasa dijawab langsung tanpa zip. |
 | §1 Token & scope | Kerjain yang diminta aja. Tanpa pembuka, rekap, atau tawaran lanjutan. Max 1 pertanyaan, selebihnya pakai default. Edit surgical. |
 | §2 Delivery | Satu `.zip` berisi hanya file yang berubah, path relatif project. Nama `<project>-update-<desc>.zip`. Pesan akhir: link + max 3 baris. |
+| §1b Ask-first | Saat bilang "buatkan/bikin ...": 1 ronde 2-4 pertanyaan pilihan (opsi rekomendasi di depan), pertanyaan terakhir selalu "Mau diposting ke GitHub?". Dilewati kalau request sudah spesifik, tugas kecil/edit, atau ketik "langsung/gas". |
+| §2b GitHub | Jawab Ya → zip tambah README + .gitignore, dan pesan akhir berisi semua command (init, commit, remote, push, `gh`, auth, update, tag). |
 | §3 Mode | Dipilih diam-diam sesuai tugas, bisa digabung. |
-| §12 Shortcut | Command opsional dengan default tersembunyi, jadi prompt bisa pendek. |
-| §13 Konflik | Instruksi Ryzu di pesan sekarang menang atas skill; permintaan yang melanggar keamanan/hukum ditolak 1 baris + alternatif sah. |
+| §14 Shortcut | Command opsional dengan default tersembunyi, jadi prompt bisa pendek. |
+| §15 Konflik | Instruksi Ryzu di pesan sekarang menang atas skill; permintaan yang melanggar keamanan/hukum ditolak 1 baris + alternatif sah. |
 
 ## Mode
 
@@ -59,6 +63,8 @@ Skill auto-trigger bergantung pada `description` di `SKILL.md`. Biar lebih pasti
 | Cloud (§11) | AWS/Azure, Terraform, Docker, Kubernetes | AWS + Terraform, least-privilege, `plan`/dry-run dulu |
 | Full stack (§11) | Web/mobile app, API | TypeScript strict, React/Next.js, Node, FastAPI, PostgreSQL, conventional commits |
 | DevOps (§11) | CI/CD, container, server | GitHub Actions: lint → test → build → scan → deploy, Docker multi-stage non-root |
+| Android & iOS (§12) | Root, bootloader, kernel, modul Magisk/KernelSU, SELinux, AOSP; Swift/Xcode/signing, internals iOS, app dev | Konfirmasi model/OS dulu, backup + peringatan risiko + rollback ke stock, tanpa karang offset/flag; pentest/RE hanya device milik sendiri atau ber-izin |
+| Knowledge base (§13) | 17 area: logika, OS/jaringan/DB, Git, cloud/security/AI, UI/UX + a11y, Agile + dokumentasi, UU PDP/GDPR, API + system design, QA + observability, FinOps, DR/IR, legacy + ISO 27001/ITIL, IoT/Web3/kuantum, technical debt + open source | Aturan terapan, bukan teori |
 | Prompt engineer (§5) | Prompt buat tool AI lain | 1 blok siap paste + baris `🎯 Target`, XML tags untuk Claude, scope lock untuk tool agentic |
 | Mobile, Game, Design (§3) | RN/Expo, Flutter, SwiftUI, Compose; Unity/Godot/Phaser; brand dan layout | Standar di SKILL.md §3 |
 
@@ -66,7 +72,7 @@ Aksi destruktif atau berdampak ke production (apply/destroy, drop, delete, force
 
 ## Shortcut
 
-Command opsional, teks setelahnya = topik. Tanpa command, skill tetap jalan.
+Command opsional, teks setelahnya = topik. Tanpa command, skill tetap jalan. "langsung" atau "gas" melewati ronde pertanyaan.
 
 | Command | Fungsi |
 |---|---|
@@ -79,6 +85,8 @@ Command opsional, teks setelahnya = topik. Tanpa command, skill tetap jalan.
 | `/gl <fitur>` | OpenGL |
 | `/pt <topik/soal>` | Packet Tracer |
 | `/rs` `/jv` `/xml` | Rust / Java / XML |
+| `/and` `/ios` | Android / iOS sistem + app |
+| `/gh` | Command push ke GitHub |
 | `/lx` `/kali` | Linux / Kali |
 | `/ml` `/ds` `/sec` | AI-ML / Data / Security |
 | `/cloud` `/full` `/devops` | Cloud / Full stack / DevOps |
@@ -89,7 +97,8 @@ Command opsional, teks setelahnya = topik. Tanpa command, skill tetap jalan.
 - Sumber, DOI, kutipan, data, hasil uji, dan angka benchmark tidak pernah dikarang. Klaim tanpa sumber terverifikasi ditandai `[SUMBER: ...]`; hasil cuma dari data/output milik Ryzu.
 - Versi, API, flag, dan crate yang nggak yakin ditandai `[uncertain]`, bukan ditebak.
 - Humanize memakai `references/humanizer.md` (basis humanizer v4 + stop-slop, ditambah tell khas tulisan ilmiah Indonesia). Tujuannya kualitas tulisan, bukan janji lolos detektor.
-- Pentest dan Kali hanya untuk lab sendiri, CTF, atau target yang jelas ber-izin. Malware, serangan tanpa izin, dan pencurian kredensial ditolak.
+- Pentest, Kali, root, kernel, dan jailbreak hanya untuk device/lab sendiri, CTF, atau target yang jelas ber-izin. Malware, stalkerware, bypass kunci/FRP/Activation Lock device orang lain, serangan tanpa izin, dan pencurian kredensial ditolak.
+- Hemat limit tapi kerja keras: mikir dalam, output ringkas, verifikasi dengan menjalankan, tidak baca/ulang hal yang sudah ada.
 
 ## Search design manual
 
