@@ -1,0 +1,5 @@
+name,keywords,rule,do,dont
+Memoization,react memo rerender performance,Memoize expensive components/values,React.memo + useMemo for heavy derived data,Memo everything blindly
+Lists,react list virtualization large,Virtualize long lists,react-window / tanstack-virtual,Rendering 1000+ nodes
+Code Split,react lazy bundle split,Lazy-load below-fold/routes,React.lazy + Suspense / next/dynamic,One giant bundle
+Keys,react key list,Stable unique keys,Use ids,Index as key for dynamic lists

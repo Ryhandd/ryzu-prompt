@@ -1,0 +1,3 @@
+name,keywords,guideline,do,dont
+Islands,astro islands hydration,Ship zero JS by default,client:visible for interactive,client:load everywhere
+Content,astro content collections,Use content collections,Typed frontmatter,Ad-hoc markdown parsing

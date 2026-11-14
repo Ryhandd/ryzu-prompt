@@ -1,0 +1,4 @@
+name,keywords,guideline,do,dont
+Tokens,tailwind tokens theme,Define colors/fonts in theme config or CSS vars,var(--color-*) + theme.extend,Scattered arbitrary hex
+Layout,tailwind responsive mobile-first,Mobile-first breakpoints,sm: md: lg: upward,Desktop-first overrides
+Dark Mode,tailwind dark mode,Class or media strategy with tokens,dark: variants on tokens,Duplicated light/dark markup

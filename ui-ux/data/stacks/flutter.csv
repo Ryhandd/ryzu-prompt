@@ -1,0 +1,4 @@
+name,keywords,guideline,do,dont
+Const,flutter const widgets performance,Use const constructors,const where possible,Rebuilding static widgets
+Lists,flutter listview builder,Use ListView.builder,Lazy item building,Column with many children
+Theme,flutter material theme,Centralize ThemeData,ColorScheme.fromSeed + tokens,Inline colors

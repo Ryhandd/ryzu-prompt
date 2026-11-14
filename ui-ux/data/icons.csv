@@ -1,0 +1,5 @@
+name,keywords,library,import_example,notes
+Lucide,icons svg react clean default,lucide-react,"import { ArrowRight } from 'lucide-react'",Default choice; 1.5-2px stroke; consistent size 20/24
+Phosphor,icons svg duotone weights,@phosphor-icons/react,"import { Rocket } from '@phosphor-icons/react'",Use when weight variants needed
+Heroicons,icons svg tailwind,@heroicons/react,"import { BoltIcon } from '@heroicons/react/24/outline'",Good Tailwind match
+Rule,icons emoji rule,all,n/a,NEVER use emoji as UI icons; always SVG

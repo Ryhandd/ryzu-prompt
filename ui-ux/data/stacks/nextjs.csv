@@ -1,0 +1,5 @@
+name,keywords,guideline,do,dont
+Rendering,nextjs server components rsc,Default to Server Components,'use client' only for interactivity,Client-wide components
+Images,nextjs image optimization,Use next/image with sizes,priority on LCP image,Raw img for hero
+Fonts,nextjs font,Use next/font,Self-hosted subset fonts,Link to Google CSS
+Metadata,nextjs seo metadata,Use metadata API,generateMetadata per route,Manual head tags

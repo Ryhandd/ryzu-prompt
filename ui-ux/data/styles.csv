@@ -1,0 +1,9 @@
+name,keywords,description,use_for,css_hints,avoid
+Glassmorphism,glass blur frosted translucent modern,Translucent surfaces with backdrop blur and thin borders,SaaS / startup / hero overlays,backdrop-filter blur(12-20px); bg rgba 8-14% white; 1px border rgba white 12%,Low-contrast text on busy backgrounds
+Bento Grid,bento grid cards dashboard modular,Modular rounded tiles of varied size in a tight grid,Feature sections / dashboards,grid auto-rows; gap 12-16px; radius 20-28px; tile shadow subtle,Too many tile sizes at once
+Editorial Minimal,editorial minimal elegant whitespace serif fashion,Large type + generous whitespace + restrained palette,Fashion / food / brand,max 2 colors; large serif display; thin rules; image-led,Heavy shadows and gradients
+Brutalist Modern,brutalist bold raw contrast portfolio,High-contrast blocks and oversized type with intentional roughness,Portfolio / agency,thick borders; mono labels; hard shadows; tight grid,Unreadable low-contrast pairs
+Dark Premium,dark premium luxury fintech security,Near-black surfaces with one precise accent and soft glow,Fintech / security / pro tools,bg #0a0b0f; surface #12141a; accent glow box-shadow; 1px border white 8%,Pure black + pure white (harsh)
+Soft Organic,soft organic calm rounded wellness,Rounded shapes and muted natural tones,Health / wellness,radius 24px+; soft shadows; blob shapes; muted greens,Sharp corners and neon
+Friendly Flat,friendly flat playful education illustration,Flat colors with friendly illustration and rounded type,Education / kids / apps,solid fills; radius 16px; spot illustrations,Tiny low-contrast text
+Neon Cyber,neon cyber game futuristic glow,Dark base with neon accents and HUD-like details,Games / tech,glow text-shadow; scanline subtle; mono accents,Neon on neon (eye strain)

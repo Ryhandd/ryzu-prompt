@@ -1,0 +1,3 @@
+name,keywords,guideline,do,dont
+Reactivity,svelte runes state,Use runes in Svelte 5,$state/$derived,Legacy reactive labels in new code
+Transitions,svelte transition motion,Use built-in transitions,fade/fly with duration 200-400,Custom JS animation first

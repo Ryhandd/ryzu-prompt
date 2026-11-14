@@ -1,0 +1,5 @@
+name,keywords,pattern,snippet,notes
+Scroll Reveal,scroll reveal fade up scrolltrigger,Fade+translate on enter,"gsap.from('.reveal',{y:32,opacity:0,duration:.7,stagger:.08,ease:'power3.out',scrollTrigger:{trigger:'.reveal',start:'top 85%'}})",Register ScrollTrigger; wrap in matchMedia reduce check
+Hero Intro,hero intro timeline text split,Timeline for hero entrance,"gsap.timeline().from('h1',{y:40,opacity:0,duration:.8}).from('.cta',{y:20,opacity:0},'-=.4')",Keep under 1.2s total
+Parallax,parallax scroll layer,Layer moves slower than scroll,"gsap.to('.bg',{yPercent:-15,ease:'none',scrollTrigger:{scrub:true}})",Disable under prefers-reduced-motion
+Reduced Motion,reduced motion matchmedia accessibility,Gate animations,"gsap.matchMedia().add('(prefers-reduced-motion: no-preference)',()=>{/* anims */})",Always wrap

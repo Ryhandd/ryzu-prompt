@@ -1,0 +1,4 @@
+name,keywords,guideline,do,dont
+Install,shadcn ui components,Add components via CLI,npx shadcn@latest add button,Copy-pasting stale code
+Theming,shadcn theme tokens css variables,Customize via CSS variables,Edit globals.css tokens,Fork every component
+Forms,shadcn form validation,Use react-hook-form + zod,Form + FormField primitives,Uncontrolled ad-hoc validation

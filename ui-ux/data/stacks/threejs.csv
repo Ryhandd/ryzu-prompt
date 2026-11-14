@@ -1,0 +1,4 @@
+name,keywords,guideline,do,dont
+Loop,threejs animation loop delta,Use delta time,renderer.setAnimationLoop + clock.getDelta,Frame-count based motion
+Dispose,threejs memory dispose,Dispose geometries/materials/textures,obj.geometry.dispose(),Leaking on route change
+Perf,threejs performance instancing pixelratio,Cap pixel ratio at 2,InstancedMesh for repeats,Thousands of separate meshes

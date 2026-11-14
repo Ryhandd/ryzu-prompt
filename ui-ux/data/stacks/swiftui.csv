@@ -1,0 +1,4 @@
+name,keywords,guideline,do,dont
+State,swiftui state observation,Own state at the right level,@State local; @Observable shared,@ObservedObject misuse
+Layout,swiftui layout safe area,Use stacks and Spacer,Respect safe area,Fixed frames everywhere
+Accessibility,swiftui dynamic type voiceover,Support Dynamic Type,Text styles + accessibilityLabel,Fixed font sizes

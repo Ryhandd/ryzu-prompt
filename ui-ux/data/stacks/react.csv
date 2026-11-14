@@ -1,0 +1,4 @@
+name,keywords,guideline,do,dont
+State,react state hooks,Keep state minimal and local,useState/useReducer near usage,Global store for local UI
+Effects,react effect hooks,Avoid effects for derived data,Compute during render,useEffect to sync derived state
+A11y,react accessibility,Use semantic elements,button for actions,div onClick

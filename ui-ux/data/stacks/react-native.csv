@@ -1,0 +1,4 @@
+name,keywords,guideline,do,dont
+Safe Area,react-native safe area notch,Respect safe areas,SafeAreaView / react-native-safe-area-context,Hardcoded top padding
+Lists,react-native flatlist performance,Use FlatList/FlashList,keyExtractor + getItemLayout,ScrollView with map for long lists
+Touch,react-native touch pressable,Use Pressable with feedback,hitSlop to reach 44px,Tiny TouchableOpacity

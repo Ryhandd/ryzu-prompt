@@ -1,0 +1,13 @@
+name,keywords,rule,do,dont,severity
+Contrast,accessibility contrast text color,Text contrast >=4.5:1 (large 3:1),Check every text/background pair,Gray text on gray background,high
+Focus,accessibility focus keyboard,Visible focus on all interactive elements,:focus-visible ring 2px offset 2px,outline:none without replacement,high
+Touch Targets,touch mobile button,Targets >=44x44px with >=8px gap,Pad small icons to 44px,Tiny adjacent icon buttons,high
+Reduced Motion,motion animation accessibility,Respect prefers-reduced-motion,Disable parallax/auto-play under media query,Forced motion,high
+Loading States,loading skeleton state,Show skeleton or spinner for >300ms waits,Skeleton matching layout,Blank screen,medium
+Forms,form input label error,Visible labels + inline errors near field,Helper text + clear error copy,Placeholder-only labels,high
+Hover Only,hover touch interaction,No feature available only on hover,Provide tap/focus equivalent,Hover-only menus,high
+CLS,performance layout shift images,Reserve space for media (CLS<0.1),width/height or aspect-ratio,Unsized images,medium
+Animation Perf,motion performance animation,Animate transform/opacity only,will-change sparingly,Animating width/top/left,medium
+Navigation,navigation header menu,Predictable nav; <=5 bottom-nav items,Sticky header with blur + offset anchors,Hidden primary nav,medium
+Empty States,empty state error,Design empty/error/offline states,Explain + offer next action,Raw error text,medium
+CTA,conversion cta button,One primary CTA per viewport,Verb-first label; strong contrast,Competing equal CTAs,medium

@@ -1,0 +1,8 @@
+name,keywords,category,weights,pair_with,use_for
+Inter,sans body ui neutral,sans,400;500;600;700,Plus Jakarta Sans,body / UI
+Plus Jakarta Sans,sans display modern saas indonesia,sans,500;600;700;800,Inter,headings
+Outfit,sans geometric friendly,sans,400;500;600;700,Nunito Sans,headings
+Space Grotesk,sans tech quirky display,sans,400;500;700,JetBrains Mono,tech headings
+Fraunces,serif editorial display elegant,serif,400;600;700,Inter,editorial headings
+JetBrains Mono,mono code labels stats,mono,400;500;700,Space Grotesk,labels / code
+Nunito Sans,sans humanist friendly body,sans,400;600;700,Outfit,body

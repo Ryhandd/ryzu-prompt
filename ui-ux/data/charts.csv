@@ -1,0 +1,6 @@
+name,keywords,use_for,rules
+Line,trend time series line,Change over time,Direct labels; limit to 4 series; tooltip on hover/tap
+Bar,compare category bar,Comparing categories,Start at zero; sort by value; no 3D
+Donut,share part whole donut pie,Part-to-whole (<=5 slices),Label with %; center total; avoid for many slices
+Heatmap,heatmap density matrix,Intensity across 2 dimensions,Sequential palette; legend; not color-only
+Sparkline,sparkline kpi mini,Inline trend in tables/KPIs,No axes; highlight last point

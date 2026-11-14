@@ -1,0 +1,4 @@
+name,keywords,guideline,do,dont
+State,compose state hoisting,Hoist state,State up events down,State inside leaf composables
+Lists,compose lazycolumn performance,Use LazyColumn with keys,key = { it.id },Column in scroll for long lists
+Theme,compose material3 theme,Use MaterialTheme tokens,colorScheme/typography,Hardcoded Color()

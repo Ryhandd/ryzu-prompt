@@ -1,0 +1,8 @@
+name,keywords,primary,secondary,accent,background,surface,text,notes
+Midnight Indigo,saas startup dark indigo modern,#4F46E5,#818CF8,#22D3EE,#0B0D14,#12151F,#E7E9F0,Avoid default purple gradient; use indigo with cyan accent sparingly
+Emerald Trust,fintech security trust green dark,#10B981,#34D399,#F59E0B,#07100E,#0E1A17,#E6F2EE,Green signals safe/positive; keep amber only for warnings
+Warm Neutral,fashion food editorial warm beige,#1C1917,#78716C,#B45309,#FAF7F2,#FFFFFF,#1C1917,Light-first; accent used once per screen
+Sage Calm,health wellness calm green soft,#3F6B5A,#8FB5A3,#E9B872,#F6F8F5,#FFFFFF,#1F2A25,Keep contrast 4.5:1 on muted tones
+Sky Warm,education friendly blue warm,#2563EB,#60A5FA,#F97316,#F8FAFC,#FFFFFF,#0F172A,Orange for CTA only
+Mono Contrast,portfolio brutalist mono black white,#000000,#525252,#FF3B00,#FFFFFF,#F5F5F5,#000000,One loud accent only
+Neon Night,game neon cyber dark,#8B5CF6,#06B6D4,#F43F5E,#05060A,#0D0F18,#EDEDF7,Limit glow to CTAs and key stats

@@ -1,0 +1,6 @@
+name,keywords,rule,do,dont
+Viewport,web viewport responsive meta,Set viewport meta,"<meta name=viewport content='width=device-width, initial-scale=1'>",Fixed-width layouts
+Semantic HTML,web semantic html a11y,Use landmarks and headings in order,"header/nav/main/section/footer; one h1",div soup
+SEO Meta,web seo meta og favicon,Title/description/OG/favicon on every page,"title<=60, description<=160, og:image 1200x630",Missing OG tags
+Images,web image webp lazy,Modern formats + lazy-load,"WebP/AVIF, loading=lazy, width/height",Huge unoptimized PNG
+Fonts,web font swap preload,Avoid FOIT/layout shift,"font-display: swap; preload critical font",Blocking font load
