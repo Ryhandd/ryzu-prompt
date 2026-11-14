@@ -1,12 +1,14 @@
 # ryzu-prompt
 
-Personal operating system buat AI: bikin website modern/premium, UI/UX, app, game, networking, cybersecurity (defensif/authorized), design, dan nulis prompt buat tool AI lain. Hemat token, scope disiplin, hasil dikirim sebagai zip file yang berubah aja.
+Personal operating system buat AI (always-on: otomatis jalan di semua prompt, tanpa perlu `/ryzu-prompt`): website modern/premium, laporan/karya ilmiah/skripsi (humanized), OpenGL 3D, Cisco Packet Tracer, Rust/Java/XML, Linux (Kali/Debian), AI/ML, data science, cloud, DevOps, full stack, cybersecurity (defensif/authorized), design, dan nulis prompt buat tool AI lain. Hemat token, scope disiplin, hasil dikirim sebagai zip file yang berubah aja.
 
 ## Isi
 
 ```
 ryzu-prompt/
 ├── SKILL.md                      # instruksi utama skill
+├── references/
+│   └── humanizer.md              # pola tulisan AI + cara bersihin (ID/EN)
 └── ui-ux/
     ├── scripts/search.py         # design-intelligence search (Python 3 stdlib only)
     ├── data/                     # styles, colors, typography, landing, ux, charts, icons, gsap, dll
@@ -30,6 +32,8 @@ Untuk tool lain, taruh folder ini di lokasi skills tool tersebut.
 ## Pemakaian
 
 Panggil dengan `/ryzu-prompt`, atau kata kunci seperti "buatin prompt" / "bikin website".
+
+Shortcut: `/web` `/lap` `/skripsi` `/jurnal` `/riset` `/hum` `/gl` `/pt` `/rs` `/jv` `/xml` `/lx` `/kali` `/ml` `/ds` `/sec` `/cloud` `/full` `/devops` `/prompt` (detail di SKILL.md §11).
 
 Search manual (butuh Python 3):
 
